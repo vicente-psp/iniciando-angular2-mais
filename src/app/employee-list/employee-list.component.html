@@ -6,7 +6,7 @@
         <th>Bônus</th>
     </thead>
     <tbody>
-        <tr *ngFor="let employee of employees">
+        <tr *ngFor="let employee of employeeService.employees">
             <!-- <td>{{ employee.name }}</td>
             <td>{{ employee.salary }}</td> -->
             <td [innerHtml]="employee.name"></td>
