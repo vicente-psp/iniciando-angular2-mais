@@ -1,1 +1,13 @@
 <h1>Nossos empregados</h1>
+<table>
+    <thead>
+        <th>Nome</th>
+        <th>Salário</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td>{{ employee.name }}</td>
+            <td>{{ employee.salary }}</td>
+        </tr>
+    </tbody>
+</table>
